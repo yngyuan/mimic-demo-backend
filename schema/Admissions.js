@@ -2,7 +2,10 @@ cube(`Admissions`, {
   sql: `SELECT * FROM mimiciii.admissions`,
   
   joins: {
-    
+    Patients: {
+      relationship: `belongsTo`,
+      sql: `${Patients}.SUBJECT_ID = ${Admissions}.SUBJECT_ID`
+    }
   },
   
   measures: {
@@ -13,6 +16,12 @@ cube(`Admissions`, {
   },
   
   dimensions: {
+    HADM_ID: {
+      sql: `HADM_ID`,
+      type: `number`,
+      primaryKey: true
+    },
+
     admissionLocation: {
       sql: `admission_location`,
       type: `string`
