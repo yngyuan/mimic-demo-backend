@@ -21,8 +21,8 @@ cube(`Icustays`, {
   },
   
   dimensions: {
-    ICUSTAY_ID: {
-      sql: `ICUSTAY_ID`,
+    ROW_ID: {
+      sql: `ROW_ID`,
       type: `number`,
       primaryKey: true
     },

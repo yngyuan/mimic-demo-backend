@@ -21,8 +21,8 @@ cube(`Patients`, {
   },
   
   dimensions: {
-    SUBJECT_ID: {
-      sql: `SUBJECT_ID`,
+    ROW_ID: {
+      sql: `ROW_ID`,
       type: `number`,
       primaryKey: true
     },
