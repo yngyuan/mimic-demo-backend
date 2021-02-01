@@ -1,5 +1,5 @@
 # mimic-dashboard
-This is a dashboard visualization using mimic-iii demo data.
+This is the back end for my dashboard visualizatio of mimic-iii demo data.
 ## 1 tech
 
 - Backend

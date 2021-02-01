@@ -20,7 +20,12 @@ cube(`Labevents`, {
     count: {
       type: `count`,
       drillMembers: []
-    }
+    },
+    valuenum:{
+      sql:`valuenum`,
+      type: `avg`
+    },
+
   },
   
   dimensions: {
@@ -44,6 +49,11 @@ cube(`Labevents`, {
       sql: `value`,
       type: `string`
     },
+    //
+    // valuenum:{
+    //   sql:`valuenum`,
+    //   type: `number`
+    // },
     
     charttime: {
       sql: `charttime`,

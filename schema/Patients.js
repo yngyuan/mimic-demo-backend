@@ -17,10 +17,15 @@ cube(`Patients`, {
     count: {
       type: `count`,
       drillMembers: []
-    }
+    },
   },
   
   dimensions: {
+    SUBJECT_ID: {
+      sql: `SUBJECT_ID`,
+      type: `string`
+    },
+
     ROW_ID: {
       sql: `ROW_ID`,
       type: `number`,
