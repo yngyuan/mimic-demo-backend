@@ -10,5 +10,10 @@
   "devDependencies": {
     "@cubejs-backend/postgres-driver": "^0.25.15",
     "@cubejs-backend/server": "^0.25.15"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.4",
+    "lodash": "^4.17.21"
   }
 }
