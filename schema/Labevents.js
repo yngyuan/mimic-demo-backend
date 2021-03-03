@@ -15,11 +15,11 @@ cube(`Labevents`, {
       sql: `${Labevents}.ITEMID = ${DLabitems}.ITEMID`
     }
   },
-  
+  // Testing drill down feature.
   measures: {
     count: {
       type: `count`,
-      drillMembers: []
+      drillMembers: [Patients.SUBJECT_ID, DLabitems.label, Labevents.value, Labevents.valueuom, Labevents.flag]
     },
     valuenum:{
       sql:`valuenum`,
@@ -33,6 +33,11 @@ cube(`Labevents`, {
       sql: `ROW_ID`,
       type: `number`,
       primaryKey: true
+    },
+
+    SUBJECT_ID: {
+      sql: `SUBJECT_ID`,
+      type: `string`
     },
 
     flag: {
