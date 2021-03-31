@@ -41,6 +41,11 @@ cube(`DLabitems`, {
     fluid: {
       sql: `fluid`,
       type: `string`
+    },
+
+    normalRangeF: {
+      sql: `normal_range_F`,
+      type: `string`
     }
   }
 });
